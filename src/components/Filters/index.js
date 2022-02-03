@@ -14,7 +14,9 @@ export function Filters() {
             {collections.map(collection => (
                 <CategoryFilterItem
                 title={collection.title} 
-                key={collection.shopifyId} />
+                key={collection.shopifyId} 
+                id={collection.shopifyId}
+                />
             ))}
         </FiltersWrapper>
     );
