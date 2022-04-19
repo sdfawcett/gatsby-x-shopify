@@ -10,9 +10,7 @@ export function ProductTile({ title, imageFluid, description, minPrice, handle }
             <Title>
                 {title}
             </Title>
-            <Description>
-                {description}
-            </Description>
+
             <Price>
                 from ${parseFloat(minPrice).toFixed(2)}
             </Price>

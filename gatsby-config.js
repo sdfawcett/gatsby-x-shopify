@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `M. Hatter Store`,
     description: `We're mad about hats`,
-    author: `@tomphill`,
+    author: `shayne.fawcett@gmail.com`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
