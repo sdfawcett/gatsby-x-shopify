@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Layout, ImageGallery, ProductQuantityAdder, Button, SEO } from 'components';
+import { LayoutLite, ImageGallery, ProductQuantityAdder, Button, SEO } from 'components';
 import { Grid, SelectWrapper, Price } from './styles';
 import CartContext from 'context/CartContext';
 import { navigate, useLocation } from '@reach/router';
@@ -43,7 +43,7 @@ export default function ProductTemplate(props) {
     };
     
     return (
-        <Layout>
+        <LayoutLite>
             <SEO 
             description={props.data.shopifyProduct.description}
             title={props.data.shopifyProduct.title} 
@@ -88,6 +88,6 @@ export default function ProductTemplate(props) {
                     />
                 </div>
             </Grid>
-        </Layout>
+        </LayoutLite>
     );
 }

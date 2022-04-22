@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Filters, ProductsGrid, SEO } from 'components';
+import { LayoutLite, Filters, ProductsGrid, SEO } from 'components';
 import ProductContext from 'context/ProductContext';
 import styled from 'styled-components';
 import queryString from 'query-string';
@@ -68,7 +68,7 @@ export default function AllProducts() {
     .filter(filterBySearchTerm);     
 
     return (
-        <Layout>
+        <LayoutLite>
             <SEO title="All Products" description="The M. Hatter Store All Products" />
             {!!searchTerm && !!filteredProducts.length && (
                 <h3>
@@ -115,6 +115,6 @@ export default function AllProducts() {
                     </div>
                 )}
             </Content>
-        </Layout>
+        </LayoutLite>
     );
 }

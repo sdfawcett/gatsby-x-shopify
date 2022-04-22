@@ -1,20 +1,22 @@
 import React from 'react';
-import { HeaderWrapper } from './styles';
+import { Nav, NavLink } from './styles';
 import { Cart } from '../Cart';
 import { Logo } from '../Logo';
 import { Search } from '../Search';
-import {Link} from 'gatsby';
+
 
 export function Header() {
     return (
-    <HeaderWrapper>
-        <div>
-            <Link to="/">
+        <Nav>
+            <NavLink to='/'>
                 <Logo />
-            </Link>
-        </div>
-        <Search />
-        <Cart />
-    </HeaderWrapper>
+            </NavLink>
+
+            <span>
+                <Search />
+            </span>
+            
+            <Cart />
+        </Nav>
     );
 }
