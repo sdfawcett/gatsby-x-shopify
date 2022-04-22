@@ -17,8 +17,12 @@ export function Cart() {
     return (
     <CartWrapper>
         <FaShoppingCart size="1.5em" />
-        <div>
+        <div className='dt-cart-info'>
             {totalQuantity} item(s) / ${checkout?.totalPrice || '0.00'}
+        </div>
+
+        <div className='mobile-cart-info'>
+            {totalQuantity}
         </div>
     </CartWrapper>
     );

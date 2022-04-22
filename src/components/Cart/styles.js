@@ -21,4 +21,24 @@ export const CartWrapper = styled(StyledLink).attrs(() => ({
     &:hover {
         text-decoration: underline;
     }
+
+    
+
+    >.dt-cart-info {
+
+        margin: auto 0 auto .4rem;
+
+        @media(max-width: 768px) {
+        display: none;
+    }
+
+    }
+
+    >.mobile-cart-info {
+
+        @media(min-width: 768px) {
+        display: none;
+        }
+
+    }
 `;

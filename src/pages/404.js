@@ -1,12 +1,12 @@
 import React from 'react';
-import { Layout, SEO } from 'components';
+import { LayoutLite, SEO } from 'components';
 
 const NotFoundPage = () => (
-  <Layout>
+  <LayoutLite>
     <SEO title="404: Not found" />
     <h1>NOT FOUND</h1>
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
+  </LayoutLite>
 );
 
 export default NotFoundPage;
