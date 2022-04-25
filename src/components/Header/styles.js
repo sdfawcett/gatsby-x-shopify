@@ -1,17 +1,38 @@
 import styled from 'styled-components';
 import {Link} from 'gatsby';
 
-export const Nav = styled.nav`
+export const NavTrans = styled.nav`
     background: transparent;
     height: 80px;
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0.5rem;
+    margin: -80px auto 0 auto;
+    padding: 0.5rem 2rem;
     box-sizing: border-box;
     z-index: 100;
-    position: relative;
+    position: sticky; 
+    top: 0;
+
+    >span {
+        margin: auto 0;
+
+        @media(max-width: 768px) {
+            display: none;
+        }
+    }
+`;
+
+export const NavBg = styled.nav`
+    background: rgb(255, 255, 255, 0.3);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: -80px auto 0 auto;
+    padding: 0.5rem 2rem;
+    box-sizing: border-box;
+    z-index: 100;
+    position: sticky; 
+    top: 0;
 
     >span {
         margin: auto 0;

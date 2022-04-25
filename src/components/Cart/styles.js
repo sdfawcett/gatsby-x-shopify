@@ -1,13 +1,11 @@
 import styled from 'styled-components';
-import { StyledLink } from '../StyledLink';
 
-export const CartWrapper = styled(StyledLink).attrs(() => ({
-    to: '/cart',
-}))`
+export const CartWrapper = styled.div`
     display: flex;
     color: black;
     text-decoration: none;
     padding-left: 16px;
+    cursor: pointer;
 
     >svg {
         margin: auto 0;
