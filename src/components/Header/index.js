@@ -48,7 +48,7 @@ export function Header({ toggle }) {
                     <Search />
                 </span>
                 
-                <Cart />
+                <Cart toggle={toggle} />
             </NavBg>
         }
         </>

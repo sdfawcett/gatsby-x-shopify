@@ -33,7 +33,12 @@ export const CloseIcon = styled(FaTimes)`
 `;
 
 export const CartContentWrapper = styled.div`
-  color: #fff;
+    width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    background: white;
+    color: black;
+    border-radius: 10px;
 `;
 
 export const CartHeader = styled.div`
