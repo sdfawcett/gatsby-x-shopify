@@ -8,8 +8,9 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 16px;
   }
   body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Commissioner', sans-serif;
     line-height: 1.2;
+    background-color: #f8f5f2;
   }
   strong{
     font-weight: bold;

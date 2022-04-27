@@ -6,13 +6,13 @@ import { FaTimes } from "react-icons/fa"
 export const CartDrawerContainer = styled.aside`
    position: fixed;
    z-index: 999;
-   width: 100%;
+   width: 40%;
    height: 100%;
    background: #0d0d0d;
    display: grid;
    align-items: center;
    top: 0;
-   left: 0;
+   right: 0;
    transition: 0.3s ease-in-out;
    opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
    top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};

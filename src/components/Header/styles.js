@@ -3,10 +3,10 @@ import {Link} from 'gatsby';
 
 export const NavTrans = styled.nav`
     background: transparent;
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
-    margin: -80px auto 0 auto;
+    margin: -100px auto 0 auto;
     padding: 0.5rem 2rem;
     box-sizing: border-box;
     z-index: 100;
@@ -24,10 +24,10 @@ export const NavTrans = styled.nav`
 
 export const NavBg = styled.nav`
     background: rgb(255, 255, 255, 0.3);
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
-    margin: -80px auto 0 auto;
+    margin: -100px auto 0 auto;
     padding: 0.5rem 2rem;
     box-sizing: border-box;
     z-index: 100;

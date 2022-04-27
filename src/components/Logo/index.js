@@ -1,21 +1,12 @@
 import React from 'react';
 import Img from 'gatsby-image';
-import {useStaticQuery, graphql} from 'gatsby';
+import VbLogo from '../../images/svg/vinyl-beat-logo-light-v2-cropped.svg';
+import { LogoContainer } from './styles';
 
 export function Logo() {
-    const data = useStaticQuery(graphql`
-        {
-        file(relativePath: {eq: "MadHatter.png"}) {
-          childImageSharp {
-              fixed(width: 160) {
-                  ...GatsbyImageSharpFixed_withWebp
-              }
-          }
-        }
-      }
-    `);
-
-    console.log(data);
-
-    return <Img fixed={data.file.childImageSharp.fixed} />;
+    return (
+      <LogoContainer>
+        <VbLogo />
+      </LogoContainer>
+    );
 }

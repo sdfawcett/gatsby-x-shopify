@@ -86,6 +86,7 @@ export const HeroItems = styled.div`
 
 export const HeroH1 = styled.h1`
    font-size: clamp(1.5rem, 6vw, 4rem);
+   font-family: 'Fraunces';
    margin-bottom: 1.5rem;
    letter-spacing: 3px;
    padding: 0 1rem;
@@ -93,6 +94,7 @@ export const HeroH1 = styled.h1`
 
 export const HeroP = styled.p`
    font-size: clamp(1rem, 3vw, 3rem);
+   font-family: 'Commissioner';
    margin-bottom: 2rem;
    font-weight: 400;
 `;
