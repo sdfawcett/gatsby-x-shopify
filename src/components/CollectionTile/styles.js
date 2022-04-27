@@ -6,7 +6,7 @@ export const CollectionTileWrapper = styled.div`
     max-height: 100vh;
     display: flex;
     position: relative;
-    margin-bottom: 5px;
+    margin: .25rem;
 
     >div {
         flex-grow: 1;

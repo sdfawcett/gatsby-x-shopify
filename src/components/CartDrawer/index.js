@@ -91,7 +91,7 @@ export default function CartDrawer({ isOpen, toggle }) {
             }
             <Footer>
                 <div>
-                    <Button onClick={() => navigate(-1)}>
+                    <Button onClick={toggle}>
                         Continue shopping
                     </Button>
                 </div>

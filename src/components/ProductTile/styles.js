@@ -2,21 +2,22 @@ import styled from 'styled-components';
 import { StyledLink } from '../StyledLink';
 
 export const ProductTileWrapper = styled.div`
-    border: 1px solid #ddd;
     display: flex;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+    border-radius: 5px;
     overflow: hidden;
     flex-direction: column;
+    padding: 1rem;
+    transition: all .25s ease;
+
+    &:hover {
+
+        box-shadow: 0 0 20px rgba(0, 0, 0, .05), 0 0px 40px rgba(0, 0, 0, .08);
+        transform: translateY(-5px);
+        background-color: white;
+    }
 
     >${StyledLink} {
-        border: 1px solid black;
         text-decoration: none;
-        display: block;
-        padding: 10px;
-        text-align: center;
-        font-weight: bold;
-        color: black;
     }
 `;
 

@@ -12,8 +12,4 @@ export const ProductsGridWrapper = styled.section`
     @media(min-width: 768px) {
         grid-template-columns: 1fr 1fr 1fr;
     }
-
-    @media(min-width: 1024px) {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
 `;
