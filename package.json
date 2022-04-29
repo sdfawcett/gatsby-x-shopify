@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Shayne Fawcett mindfulwebpartnership.com",
   "dependencies": {
+    "aos": "^2.3.4",
     "babel-plugin-styled-components": "^1.10.7",
     "framer-motion": "^6.3.3",
     "gatsby": "^2.23.12",

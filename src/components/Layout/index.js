@@ -3,6 +3,7 @@ import { LayoutWrapper } from './styles';
 import { Header } from '../Header';
 import Hero from '../Hero';
 import FastMarquee from '../Marquee';
+import SignupCTA from '../SignupCTA';
 import Footer from '../Footer';
 import CartDrawer from '../CartDrawer';
 
@@ -22,6 +23,7 @@ const Layout = ({ children }) => {
       <LayoutWrapper>
         <main>{children}</main>
       </LayoutWrapper>
+    <SignupCTA />
     <Footer />
     </>
   );
