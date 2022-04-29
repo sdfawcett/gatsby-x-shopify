@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 
 export const ImageGalleryWrapper = styled.section`
-    >div:first-child {
-        border: 5px solid #ccc;
-    }
 
     >div:last-child {
         margin-top: 5px;

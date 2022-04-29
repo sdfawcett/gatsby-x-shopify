@@ -59,7 +59,6 @@ export default function ProductTemplate(props) {
                     <>
                     {product?.variants.length > 1 && (
                         <SelectWrapper>
-                            <strong>Variant</strong>
                             <select value={selectedVariant.id} onChange={handleVariantChange}>
                                 {product?.variants.map(v => (
                                     <option key={v.id} value={v.id}>

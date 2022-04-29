@@ -3,8 +3,17 @@ import styled from 'styled-components';
 export const Grid = styled.section`
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 20px;
     margin-top: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+
+    >div:first-child {
+            border-left: 1px solid #ccc;
+            padding: 1rem;
+        }
+
+        
+
 
     @media(min-width: 768px) {
         grid-template-columns: 1fr 1fr;
@@ -20,7 +29,9 @@ export const Grid = styled.section`
 `;
 
 export const SelectWrapper = styled.div`
-    margin-top: 40px;
+    margin: 40px 0 10px 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
 
     >strong {
         display: block;
