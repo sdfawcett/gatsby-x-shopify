@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
   body{
     font-family: 'Commissioner', sans-serif;
     line-height: 1.2;
-    background-color: #f8f5f2;
+    background-color: white;
   }
   strong{
     font-weight: bold;
