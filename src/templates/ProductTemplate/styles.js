@@ -39,6 +39,10 @@ export const SelectWrapper = styled.div`
     }
 `;
 
+export const ProductInfoWrapper = styled.div`
+    max-width: 40rem;
+`;
+
 export const ProductControlsWrapper = styled.div`
     margin-bottom: 40px;
 `;

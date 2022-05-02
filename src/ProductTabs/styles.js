@@ -8,10 +8,12 @@ export const Tab = styled.button`
   background: white;
   border: 0;
   outline: 0;
+  transition: all 0.5s ease;
   ${({ active }) =>
     active &&
     `
     border-bottom: 2px solid black;
+    background: gray;
     opacity: 1;
   `}
 `;

@@ -4,7 +4,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import { LayoutLite, ImageGallery, ProductQuantityAdder, Button, SEO } from 'components';
 import ProductTabs from '../../ProductTabs';
-import { Grid, SelectWrapper, Price, ProductControlsWrapper } from './styles';
+import { Grid, ProductInfoWrapper, SelectWrapper, Price, ProductControlsWrapper } from './styles';
 import CartContext from 'context/CartContext';
 import { navigate, useLocation } from '@reach/router';
 import queryString from 'query-string';
@@ -54,8 +54,11 @@ export default function ProductTemplate(props) {
             </Button>
             <Grid>
                 <div>
-                    <h1>{props.data.shopifyProduct.title}</h1>
-                    <p>{props.data.shopifyProduct.description}</p>
+                    <ProductInfoWrapper>
+                        <h1>{props.data.shopifyProduct.title}</h1>
+                        <p>{props.data.shopifyProduct.description}</p>
+                    </ProductInfoWrapper>
+
                     {product?.availableForSale && !!selectedVariant && 
                     <>
                     {product?.variants.length > 1 && (
