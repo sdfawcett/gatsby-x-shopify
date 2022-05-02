@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { LayoutWrapper } from './styles';
-import { Header } from '../Header';
+import { HeaderLite } from '../HeaderLite';
 import Footer from '../Footer';
 import CartDrawer from '../CartDrawer';
 
@@ -14,7 +14,7 @@ const LayoutLite = ({ children }) => {
 
   return (
     <>
-      <Header toggle={toggle} />
+      <HeaderLite toggle={toggle} />
       <CartDrawer isOpen={isOpen} toggle={toggle} />
       <LayoutWrapper>
         <main>{children}</main>

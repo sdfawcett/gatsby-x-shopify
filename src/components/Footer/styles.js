@@ -10,6 +10,11 @@ export const FooterContainer = styled.div`
    background: #fafafb;
 `;
 
+export const LogoContainer = styled.div`
+   width: 5rem;
+   margin: 5% 0 5% 0;
+`;
+
 export const FooterLinksWrapper = styled.div`
    display: grid;
    grid-template-columns: repeat(2, 1fr);

@@ -13,8 +13,6 @@ import {StyledLink} from '../StyledLink';
 
 export const MarqueeContainer = styled.section`
    width: 100%;
-   border-top: 1px solid #ccc;
-   border-bottom: 1px solid #ccc;
    margin: 2rem 0;
 `;
 

@@ -6,16 +6,25 @@ import
    FooterDesc,
    FooterLinkItems,
    FooterLinkTitle,
-   FooterLink
+   FooterLink,
+   LogoContainer
 } 
 from './styles'
+import {Link} from 'gatsby';
+import CowtownLogoDark from '../../images/svg/cowtown-logo-dark-v2-cropped.svg';
 
 export default function Footer() {
   return (
     <FooterContainer>
        <FooterLinksWrapper>
           <FooterDesc>
-             <h1>Mad Hatter</h1>
+
+            <Link to='/'>
+               <LogoContainer>
+                  <CowtownLogoDark />
+               </LogoContainer>
+            </Link>
+
              <p>We strive to create the best experiences for our customers</p>
           </FooterDesc>
           <FooterLinkItems>

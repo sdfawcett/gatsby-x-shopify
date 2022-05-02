@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { NavTrans, NavBg, NavLink, LogoContainer } from './styles';
 import { Cart } from '../Cart';
-import CowtownLogoLight from '../../images/svg/cowtown-logo-light-v2-cropped.svg';
 import CowtownLogoDark from '../../images/svg/cowtown-logo-dark-v2-cropped.svg';
 import { Search } from '../Search';
 
 
-export function Header({ toggle }) {
+export function HeaderLite({ toggle }) {
 
     //nav opacity change on scroll
     const [clientWindowHeight, setClientWindowHeight] = useState(false);
@@ -31,7 +30,7 @@ export function Header({ toggle }) {
             <NavTrans>
                 <NavLink to='/'>
                 <LogoContainer>
-                    <CowtownLogoLight />
+                    <CowtownLogoDark />
                 </LogoContainer>
                 </NavLink>
 
