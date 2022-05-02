@@ -1,28 +1,23 @@
 import styled from 'styled-components'
+import HeroStaticBg from "../../images/static-hero-bg.webp"
 import {StyledLink} from '../StyledLink';
 
 export const HeroContainer = styled.div`
-   background: #0c0c0c;
+   background: linear-gradient(
+   180deg,
+   rgba(0, 0, 0, 0.5) 0%,
+   rgba(0, 0, 0, 0.5) 100%
+   ),
+   url(${HeroStaticBg}) no-repeat center;
+   background-size: cover;
    display: flex;
    justify-content: center;
    color: #fff;
-   align-items: center;
+   width:100%;
    height: 100vh;
-   width: 100%;
+   align-items: center;
    position: relative;
 
-   ::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      z-index: 2;
-      background: 
-      linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), 
-      linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%);
-   }
 
    ${StyledLink} {
       padding: 10px;
@@ -46,10 +41,15 @@ export const HeroContainer = styled.div`
 
 export const HeroBg = styled.div`
    position: absolute;
-   top: 0;
-   bottom: 0;
-   right: 0;
-   left: 0;
+
+   background: linear-gradient(
+   180deg,
+   rgba(0, 0, 0, 0.5) 0%,
+   rgba(0, 0, 0, 0.5) 35%,
+   rgba(0, 0, 0, 0.1) 100%
+   ),
+   url(${HeroStaticBg}) no-repeat center;
+   background-size: cover;
    width:100%;
    height: 100%;
    overflow: hidden;

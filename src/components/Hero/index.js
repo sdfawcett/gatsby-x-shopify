@@ -10,17 +10,12 @@ import
    HeroP, 
 } 
 from './styles'
-import HeroVideo from '../../images/videos/ditc-1.mp4'
 import {StyledLink} from '../StyledLink'
 
 export default function Hero() {
   return (
     <HeroContainer>
-
-       <HeroBg>
-          <VideoBg src={HeroVideo} type='video/mp4' autoPlay loop muted playsInline />
-       </HeroBg>
-
+       
        <HeroContent>
          <HeroItems>
             <HeroH1>Unreal Destinations</HeroH1>

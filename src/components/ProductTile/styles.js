@@ -24,7 +24,7 @@ export const ProductTileWrapper = styled.div`
 export const Title = styled.div`
     font-weight: bold;
     font-size: 20px;
-    margin: 20px;
+    margin: 20px 20px 0 20px;
 `;
 
 export const Description = styled.div`

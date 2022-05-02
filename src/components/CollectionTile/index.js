@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {CollectionTileWrapper, CollectionTileContent, Title, Description} from './styles';
 import BackgroundImage from 'gatsby-background-image';
 import {StyledLink} from '../StyledLink';
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 export function CollectionTile({destination, description, title, backgroundImage, sale}) {
+    useEffect(() => {
+        Aos.init({})
+      }, [])
     return (
-        <CollectionTileWrapper>
+        <CollectionTileWrapper data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000" data-aos-once="true">
 
             <BackgroundImage fluid={backgroundImage} />
 

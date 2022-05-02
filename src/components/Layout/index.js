@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { LayoutWrapper } from './styles';
 import { Header } from '../Header';
 import Hero from '../Hero';
-import FastMarquee from '../Marquee';
+import ImageMarquee from '../Marquee';
+import TextMarquee from '../TextMarquee';
 import SignupCTA from '../SignupCTA';
 import Footer from '../Footer';
 import CartDrawer from '../CartDrawer';
@@ -19,10 +20,11 @@ const Layout = ({ children }) => {
     <Header toggle={toggle} />
     <CartDrawer isOpen={isOpen} toggle={toggle} />
     <Hero />
-    <FastMarquee />
+    <ImageMarquee />
       <LayoutWrapper>
         <main>{children}</main>
       </LayoutWrapper>
+    <TextMarquee />
     <SignupCTA />
     <Footer />
     </>
