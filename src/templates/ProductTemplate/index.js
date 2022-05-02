@@ -3,7 +3,8 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { LayoutLite, ImageGallery, ProductQuantityAdder, Button, SEO } from 'components';
-import { Grid, SelectWrapper, Price } from './styles';
+import ProductTabs from '../../ProductTabs';
+import { Grid, SelectWrapper, Price, ProductControlsWrapper } from './styles';
 import CartContext from 'context/CartContext';
 import { navigate, useLocation } from '@reach/router';
 import queryString from 'query-string';
@@ -70,11 +71,14 @@ export default function ProductTemplate(props) {
                         )}
                         {!!selectedVariant && (
                             <>
-                                <Price>${selectedVariant.price}</Price>
-                                <ProductQuantityAdder 
-                                available={selectedVariant.available} 
-                                variantId={selectedVariant.id} 
-                                />
+                                <ProductControlsWrapper>
+                                    <Price>${selectedVariant.price}</Price>
+                                    <ProductQuantityAdder 
+                                    available={selectedVariant.available} 
+                                    variantId={selectedVariant.id} 
+                                    />
+                                </ProductControlsWrapper>
+                                <ProductTabs />
                             </>
                         )}
                     </>

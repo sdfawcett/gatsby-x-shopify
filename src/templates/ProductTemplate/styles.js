@@ -39,6 +39,11 @@ export const SelectWrapper = styled.div`
     }
 `;
 
+export const ProductControlsWrapper = styled.div`
+    margin-bottom: 40px;
+`;
+
+
 export const Price = styled.div`
     margin-top: 40px 0;
     font-weight: bold;
