@@ -8,6 +8,7 @@ import
    CartContentMenu,
    CartDrawerLink,
    BtnWrap,
+   CartHeading,
    CartItem,
    CartHeader,
    CartFooter,
@@ -36,9 +37,9 @@ export default function CartDrawer({ isOpen, toggle }) {
 
       <CartContentWrapper>
       <section>
-            <h1>
+            <CartHeading>
                 Your Cart
-            </h1>
+            </CartHeading>
 
             {!!checkout?.lineItems && (
             <CartHeader>

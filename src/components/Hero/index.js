@@ -18,8 +18,12 @@ export default function Hero() {
        
        <HeroContent>
          <HeroItems>
-            <HeroH1>Sweat Shorts Are Back For Spring</HeroH1>
-            <HeroP>Out of this world</HeroP>
+            <HeroH1>
+              <h1>The Great State of Ohio</h1>
+            </HeroH1>
+            <HeroP>
+              <p>Celebrate the 17th state in all of its glory with our Ohio-themed tees and apparel.</p>
+            </HeroP>
             
             <StyledLink to='/all-products'>
                 View Products

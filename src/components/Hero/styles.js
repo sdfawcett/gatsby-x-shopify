@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import HeroStaticBg from "../../images/hero-sweatshorts.webp"
+import HeroStaticBg from "../../images/hero-wts.webp"
 import {StyledLink} from '../StyledLink';
 
 export const HeroContainer = styled.div`
@@ -101,19 +101,26 @@ export const HeroItems = styled.div`
     }
 `;
 
-export const HeroH1 = styled.h1`
-   font-size: clamp(3rem,5vw,4rem);
-   font-family: 'Merriweather', serif;
+export const HeroH1 = styled.div`
    margin-bottom: 1.5rem;
    letter-spacing: 3px;
    padding: 0 1rem 0 0;
+
+   >h1 {
+      font-size: clamp(3rem,5vw,4rem);
+      font-family: 'Merriweather', serif;
+   }
 `;
 
-export const HeroP = styled.p`
-   font-size: clamp(1rem,5vw,2.5rem);
-   font-family: 'Karla', sans-serif;
+export const HeroP = styled.div`
    margin-bottom: 2rem;
-   font-weight: 400;
+   max-width: 60%;
+
+   >p {
+      font-size: clamp(1rem,4vw,1.5rem);
+      font-family: 'Karla', sans-serif;
+      font-weight: 400;
+   }
 
    @media(max-width: 768px) {
       text-align: center;

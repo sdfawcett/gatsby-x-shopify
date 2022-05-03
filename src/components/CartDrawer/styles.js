@@ -8,7 +8,7 @@ export const CartDrawerContainer = styled.aside`
    z-index: 999;
    width: 40%;
    height: 100%;
-   background: #0d0d0d;
+   background: white;
    display: grid;
    align-items: center;
    top: 0;
@@ -29,16 +29,20 @@ export const DrawerButtonWrap = styled.div`
 `;
 
 export const CloseIcon = styled(FaTimes)`
-  color: #fff;
+  color: #000;
 `;
 
 export const CartContentWrapper = styled.div`
     width: 600px;
     margin: 0 auto;
     padding: 1rem;
-    background: white;
     color: black;
     border-radius: 10px;
+`;
+
+export const CartHeading = styled.h1`
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
 `;
 
 export const CartHeader = styled.div`
@@ -46,6 +50,8 @@ display: grid;
 grid-template-columns: 2fr 1fr 2fr 1fr 40px;
 border-bottom: 1px solid black;
 font-weight: bold;
+font-size: .95rem;
+font-family: 'Merriweather', serif;
 
 >div {
     padding: 8px;
