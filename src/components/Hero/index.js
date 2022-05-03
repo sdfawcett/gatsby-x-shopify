@@ -18,7 +18,7 @@ export default function Hero() {
        
        <HeroContent>
          <HeroItems>
-            <HeroH1>Unreal Destinations</HeroH1>
+            <HeroH1>Sweat Shorts Are Back For Spring</HeroH1>
             <HeroP>Out of this world</HeroP>
             
             <StyledLink to='/all-products'>

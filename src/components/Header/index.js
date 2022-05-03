@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { NavTrans, NavBg, NavLink, LogoContainer } from './styles';
 import { Cart } from '../Cart';
+import { CartLite } from '../CartLite';
 import CowtownLogoLight from '../../images/svg/cowtown-logo-light-cropped.svg';
 import CowtownLogoDark from '../../images/svg/cowtown-logo-dark-cropped.svg';
 import { Search } from '../Search';
@@ -39,7 +40,7 @@ export function Header({ toggle }) {
                     <Search />
                 </span>
                 
-                <Cart toggle={toggle} />
+                <CartLite toggle={toggle} />
             </NavTrans> :
 
             <NavBg>

@@ -1,5 +1,6 @@
 import React from 'react';
 import ProductContext from 'context/ProductContext';
+import { Heading } from './styles';
 import { ProductsGrid } from '../ProductsGrid';
 
 export function FeaturedProducts() {
@@ -11,7 +12,7 @@ export function FeaturedProducts() {
 
     return (
         <section>
-            <h1>Popular Items</h1>
+            <Heading>This Month's Hot Items</Heading>
             <ProductsGrid products={featuredCollection.products} />
         </section>
     );

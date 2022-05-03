@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import HeroStaticBg from "../../images/static-hero-bg.webp"
+import HeroStaticBg from "../../images/hero-sweatshorts.webp"
 import {StyledLink} from '../StyledLink';
 
 export const HeroContainer = styled.div`
@@ -8,10 +8,11 @@ export const HeroContainer = styled.div`
    rgba(0, 0, 0, 0.5) 0%,
    rgba(0, 0, 0, 0.5) 100%
    ),
-   url(${HeroStaticBg}) no-repeat center;
+   url(${HeroStaticBg}) no-repeat;
+   background-position: center;
    background-size: cover;
    display: flex;
-   justify-content: center;
+   justify-content: flex-start;
    color: #fff;
    width:100%;
    height: 100vh;
@@ -36,6 +37,15 @@ export const HeroContainer = styled.div`
             background: black;
       }
    }
+
+   @media(max-width: 768px) {
+      background-position: 75% 75%;
+
+      ${StyledLink} {
+         margin: 2rem auto 0 auto;
+      }
+      
+    }
 
 `;
 
@@ -66,34 +76,47 @@ export const HeroContent = styled.div`
    z-index: 3;
    height: calc(100vh - 80px);
    max-height: 100%;
-   padding: 0rem calc((100vw - 1300px) /2);
+   width: 100%;
 `;
 
 export const HeroItems = styled.div`
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: center;
-   text-align: center;
+   align-items: flex-start;
+   text-align: left;
+   margin: 0 4rem;
    height: 100vh;
+   max-width: 65%;
    max-height: 100%;
    padding: 0;
    color: #fff;
    line-height: 1.1;
    font-weight: bold;
+
+   @media(max-width: 768px) {
+      max-width: 100%;
+      margin: 0 1rem;
+      text-align: center;
+    }
 `;
 
 export const HeroH1 = styled.h1`
-   font-size: clamp(1.5rem, 6vw, 4rem);
-   font-family: 'Fraunces';
+   font-size: clamp(3rem,5vw,4rem);
+   font-family: 'Merriweather', serif;
    margin-bottom: 1.5rem;
    letter-spacing: 3px;
-   padding: 0 1rem;
+   padding: 0 1rem 0 0;
 `;
 
 export const HeroP = styled.p`
-   font-size: clamp(1rem, 3vw, 3rem);
-   font-family: 'Commissioner';
+   font-size: clamp(1rem,5vw,2.5rem);
+   font-family: 'Karla', sans-serif;
    margin-bottom: 2rem;
    font-weight: 400;
+
+   @media(max-width: 768px) {
+      text-align: center;
+      margin: 0 auto;
+    }
 `;

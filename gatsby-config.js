@@ -15,9 +15,10 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `fraunces\:700b`,
           'commissioner:400',
           'commissioner:700b',
+          'merriweather:400',
+          'merriweather:700b',
         ],
       },
     },
