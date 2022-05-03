@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { NavTrans, NavBg, NavLink, LogoContainer } from './styles';
 import { Cart } from '../Cart';
-import CowtownLogoLight from '../../images/svg/cowtown-logo-light-v2-cropped.svg';
-import CowtownLogoDark from '../../images/svg/cowtown-logo-dark-v2-cropped.svg';
+import CowtownLogoLight from '../../images/svg/cowtown-logo-light-cropped.svg';
+import CowtownLogoDark from '../../images/svg/cowtown-logo-dark-cropped.svg';
 import { Search } from '../Search';
 
 

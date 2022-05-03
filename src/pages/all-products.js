@@ -9,7 +9,7 @@ const Content = styled.div`
     display: grid;
     grid-gap: 20px;
     margin-top: 20px;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
 
     @media(max-width: 768px) {
         grid-template-columns: 1fr;

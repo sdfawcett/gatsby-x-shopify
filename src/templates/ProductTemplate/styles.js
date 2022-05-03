@@ -16,7 +16,7 @@ export const Grid = styled.section`
 
 
     @media(min-width: 768px) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
 
         >div:first-child {
             order: 2;
@@ -31,7 +31,7 @@ export const Grid = styled.section`
 export const SelectWrapper = styled.div`
     margin: 40px 0 10px 0;
     border-bottom: 1px solid #ccc;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
 
     >strong {
         display: block;

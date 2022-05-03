@@ -11,7 +11,7 @@ import
 } 
 from './styles'
 import {Link} from 'gatsby';
-import CowtownLogoDark from '../../images/svg/cowtown-logo-dark-v2-cropped.svg';
+import CowtownLogoDark from '../../images/svg/cowtown-logo-dark-cropped.svg';
 
 export default function Footer() {
   return (

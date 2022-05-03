@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../Button';
+import { Button } from '../AtcButton';
 import { Input } from '../Input';
 import { ProductQuantityAdderWrapper  } from './styles';
 import CartContext from 'context/CartContext';

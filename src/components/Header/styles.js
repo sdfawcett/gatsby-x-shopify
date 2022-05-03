@@ -3,10 +3,10 @@ import {Link} from 'gatsby';
 
 export const NavTrans = styled.nav`
     background: transparent;
-    height: 100px;
+    height: 125px;
     display: flex;
     justify-content: space-between;
-    margin: -100px auto 0 auto;
+    margin: -125px auto 0 auto;
     padding: 0.5rem 2rem;
     box-sizing: border-box;
     z-index: 100;
@@ -23,16 +23,16 @@ export const NavTrans = styled.nav`
 `;
 
 export const LogoContainer = styled.div`
-   width: 5rem;
+   width: 7rem;
    margin: 5% 0 5% 0;
 `;
 
 export const NavBg = styled.nav`
     background: rgb(255, 255, 255, 0.3);
-    height: 100px;
+    height: 125px;
     display: flex;
     justify-content: space-between;
-    margin: -100px auto 0 auto;
+    margin: -125px auto 0 auto;
     padding: 0.5rem 2rem;
     box-sizing: border-box;
     z-index: 100;
