@@ -8,6 +8,7 @@ import
 from './styles'
 import Aos from "aos"
 import "aos/dist/aos.css"
+import {StyledLink} from '../StyledLink'
 
 export default function SignupCTA() {
    useEffect(() => {
@@ -17,10 +18,10 @@ export default function SignupCTA() {
       <EmailContainer>
          <EmailContent>
             <h1 data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000">
-               Get Access to Exclusive Offers
+               Win A Cowtown Shopping Spree
             </h1>
             <p data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000">
-               Sign up for your newsletter below to get $100 off your first trip!
+               Sign up for our newsletter below to get entered in our yearly shopping spree drawing!
             </p>
             <form action="#">
                <FormWrap
@@ -32,6 +33,9 @@ export default function SignupCTA() {
                   <input type="email" placeholder="Enter your email" id="email" />
                   </label>
 
+                  <StyledLink to='/'>
+                     I Want Free Stuff
+                  </StyledLink> 
                </FormWrap>
             </form>
          </EmailContent>

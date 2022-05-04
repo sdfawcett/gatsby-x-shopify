@@ -17,6 +17,10 @@ export const EmailContainer = styled.div`
    display: flex;
    justify-content: center;
    align-items: center;
+
+   @media screen and (max-width: 768px) {
+    padding: 0;
+   }
 `;
 
 export const EmailContent = styled.div`
@@ -28,7 +32,7 @@ export const EmailContent = styled.div`
     text-align: center;
     margin-bottom: 1rem;
     font-family: 'Merriweather', serif;
-    font-size: clamp(1rem, 5vw, 3rem);
+    font-size: clamp(2.5rem,5vw,3.5rem);
     padding: 0 1rem;
   }
 
@@ -50,11 +54,29 @@ export const FormWrap = styled.div`
     padding: 1rem 1.5rem;
     outline: none;
     width: 350px;
-    height: 48px;
-    border-radius: 1rem;
+    height: 25px;
+    border-radius: .2rem;
     border: none;
     margin-right: 1rem;
   }
+
+  ${StyledLink} {
+      padding: 10px;
+      background: white;
+      border: 1px solid black;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+      display: inline-block;
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+
+      &:hover {
+            color: white;
+            background: black;
+      }
+   }
 
   @media screen and (max-width: 768px) {
     display: flex;
@@ -65,6 +87,17 @@ export const FormWrap = styled.div`
       margin-bottom: 1rem;
       width: 100%;
       margin-right: 0;
+    }
+
+    ${StyledLink} {
+      text-align: center;
+   }
+  }
+
+  @media screen and (max-width: 768px) {
+    input {
+      margin: 1rem;
+      width: 70%;
     }
   }
 `;

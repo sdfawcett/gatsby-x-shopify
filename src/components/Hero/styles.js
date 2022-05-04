@@ -97,8 +97,6 @@ export const QuoteBody = styled.div`
    padding: 20px 0!important;
    letter-spacing: -0.08em;
    transform: rotate(2deg);
-
-
 `;
 
 export const QuoteQMark = styled.div`
