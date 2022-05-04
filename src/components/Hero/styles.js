@@ -38,13 +38,16 @@ export const HeroContainer = styled.div`
       }
    }
 
-   @media(max-width: 768px) {
+   @media(max-width: 1200px) {
       background-position: 75% 75%;
+      
+    }
 
+    @media(max-width: 768px) {
+      height: 150vh;
       ${StyledLink} {
          margin: 2rem auto 0 auto;
       }
-      
     }
 
 `;
@@ -79,6 +82,12 @@ export const QuoteWrapper = styled.div`
    top: 50%;
    left: 55%;
    width: 35%;
+
+   @media(max-width: 768px) {
+      top: 75%;
+      left: 11%;
+      width: 70%;
+    }
 `;
 
 export const QuoteBody = styled.div`
@@ -89,16 +98,12 @@ export const QuoteBody = styled.div`
    letter-spacing: -0.08em;
    transform: rotate(2deg);
 
-   @media(max-width: 768px) {
-        display: none;
-    }
+
 `;
 
 export const QuoteQMark = styled.div`
    position: absolute;
    font-size: 10em;
-   font-family: 'Merriweather';
-   text-transform: uppercase;
    font-weight: bold;
    color: white;
    opacity: 0.2;
@@ -110,16 +115,14 @@ export const QuoteQMark = styled.div`
    user-select: none;
 `;
 
-export const QuoteBase = styled.div`
-
-
-`;
+export const QuoteBase = styled.div``;
 
 export const BlockQuote = styled.blockquote`
    font-weight: bold;
-   font-family: 'Merriweather';
+   font-family: 'Commissioner';
    font-size: 1.75rem;
    line-height: 1.3em;
+   letter-spacing: 1px;
    color: white;
 
    >cite {
@@ -133,12 +136,22 @@ export const BlockQuote = styled.blockquote`
          margin-top: 10px;
       }
 
-      @media(max-width: 768px) {
-        display: none;
-    }
-
     @media(max-width: 1024px) {
       font-size: 1.5rem;
+    }
+
+    @media(max-width: 768px) {
+      font-size: 1rem;
+      >cite {
+         display: block;
+         font-size: 1rem;
+         font-family: 'Grape Nuts';
+         color: white;
+         text-transform: uppercase;
+         letter-spacing: 3px;
+         font-weight: bold;
+         margin-top: 10px;
+      }
     }
 `;
 
@@ -148,6 +161,10 @@ export const HeroContent = styled.div`
    height: calc(100vh - 80px);
    max-height: 100%;
    width: 100%;
+
+   @media(max-width: 768px) {
+      height: calc(70vh - 80px);
+    }
 `;
 
 export const HeroInfo = styled.div`
@@ -173,6 +190,7 @@ export const HeroItems = styled.div`
       max-width: 100%;
       margin: 0 1rem;
       text-align: center;
+      justify-content: flex-start;
     }
 `;
 
@@ -192,7 +210,7 @@ export const HeroP = styled.div`
    max-width: 60%;
 
    >p {
-      font-size: clamp(1rem,4vw,1.5rem);
+      font-size: clamp(1.5rem,4vw,2rem);
       font-family: 'Karla', sans-serif;
       font-weight: 400;
    }

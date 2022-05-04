@@ -25,6 +25,10 @@ export const NavTrans = styled.nav`
 export const LogoContainer = styled.div`
    width: 7rem;
    margin: 5% 0 5% 0;
+
+   @media(max-width: 768px) {
+    width: 5rem;
+    }
 `;
 
 export const NavBg = styled.nav`
