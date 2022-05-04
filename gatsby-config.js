@@ -19,6 +19,7 @@ module.exports = {
           'commissioner:700b',
           'merriweather:400',
           'merriweather:700b',
+          'grape nuts:400',
         ],
       },
     },

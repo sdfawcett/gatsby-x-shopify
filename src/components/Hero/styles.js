@@ -72,11 +72,86 @@ export const VideoBg = styled.video`
    object-fit: cover;
 `;
 
+
+export const QuoteWrapper = styled.div`
+   padding: 20px;
+   position: absolute;
+   top: 50%;
+   left: 55%;
+   width: 35%;
+`;
+
+export const QuoteBody = styled.div`
+   position: relative;
+   border-top: 0.45em solid darkslateblue;
+   border-bottom: 0.45em solid darkslateblue;
+   padding: 20px 0!important;
+   letter-spacing: -0.08em;
+   transform: rotate(2deg);
+
+   @media(max-width: 768px) {
+        display: none;
+    }
+`;
+
+export const QuoteQMark = styled.div`
+   position: absolute;
+   font-size: 10em;
+   font-family: 'Merriweather';
+   text-transform: uppercase;
+   font-weight: bold;
+   color: white;
+   opacity: 0.2;
+   bottom: -63px;
+   right: 0;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   -webkit-user-select: none;
+   user-select: none;
+`;
+
+export const QuoteBase = styled.div`
+
+
+`;
+
+export const BlockQuote = styled.blockquote`
+   font-weight: bold;
+   font-family: 'Merriweather';
+   font-size: 1.75rem;
+   line-height: 1.3em;
+   color: white;
+
+   >cite {
+         display: block;
+         font-size: 1.5rem;
+         font-family: 'Grape Nuts';
+         color: white;
+         text-transform: uppercase;
+         letter-spacing: 3px;
+         font-weight: bold;
+         margin-top: 10px;
+      }
+
+      @media(max-width: 768px) {
+        display: none;
+    }
+
+    @media(max-width: 1024px) {
+      font-size: 1.5rem;
+    }
+`;
+
+
 export const HeroContent = styled.div`
    z-index: 3;
    height: calc(100vh - 80px);
    max-height: 100%;
    width: 100%;
+`;
+
+export const HeroInfo = styled.div`
+
 `;
 
 export const HeroItems = styled.div`
