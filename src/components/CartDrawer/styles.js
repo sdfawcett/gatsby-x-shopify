@@ -6,16 +6,24 @@ import { FaTimes } from "react-icons/fa"
 export const CartDrawerContainer = styled.aside`
    position: fixed;
    z-index: 999;
-   width: 40%;
+   width: 50%;
    height: 100%;
    background: white;
    display: grid;
-   align-items: center;
    top: 0;
    right: 0;
+   overflow: auto;
    transition: 0.3s ease-in-out;
    opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
    top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+
+   @media screen and (max-width: 1024px) {
+     width: 80%;
+   }
+
+   @media screen and (max-width: 600px) {
+     width: 100%;
+   }
 `;
 
 export const DrawerButtonWrap = styled.div`
@@ -33,11 +41,16 @@ export const CloseIcon = styled(FaTimes)`
 `;
 
 export const CartContentWrapper = styled.div`
-    width: 600px;
-    margin: 0 auto;
+    width: 90%;
     padding: 1rem;
     color: black;
     border-radius: 10px;
+
+    @media screen and (max-width: 420px) {
+     .hidden-mobile {
+       display: none;
+     }
+   }
 `;
 
 export const CartHeading = styled.h1`
@@ -48,14 +61,18 @@ export const CartHeading = styled.h1`
 export const CartHeader = styled.div`
 display: grid;
 grid-template-columns: 2fr 1fr 2fr 1fr 40px;
-border-bottom: 1px solid black;
+border-bottom: 1px solid #ccc;
 font-weight: bold;
 font-size: .95rem;
-font-family: 'Merriweather', serif;
+font-family: 'Commissioner', sans-serif;
 
 >div {
     padding: 8px;
 }
+
+@media screen and (max-width: 420px) {
+  grid-template-columns: 2fr 1fr 1fr 20px;
+     }
 
 `;
 
@@ -73,7 +90,7 @@ export const CartFooter = styled.div`
 `;
 
 export const CartItem = styled.div`
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #ccc;
     display: grid;
     grid-template-columns: 2fr 1fr 2fr 1fr 40px;
 
@@ -92,15 +109,41 @@ export const CartItem = styled.div`
             font-size: 14px;
         }
     }
+
+    @media screen and (max-width: 420px) {
+      grid-template-columns: 2fr 1fr 1fr 20px;
+      font-size: .85rem;
+
+        >div:last-child {
+            padding-left: 2rem;
+          }
+     }
 `;
 
 export const Footer = styled.footer`
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
 
     >div:last-child {
         text-align: right;
     }
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 1fr;
+
+      >div {
+        margin-bottom: 2rem;
+      }
+
+      >div:last-child {
+        text-align: center;
+    }
+
+    >div button {
+        width: 100%;
+    }
+   }
 `;
 
 export const CartContentMenu = styled.div`

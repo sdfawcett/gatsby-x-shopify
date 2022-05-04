@@ -11,7 +11,7 @@ export const QuantityAdjusterWrapper = styled.div`
 
 export const AdjusterButton = styled.div`
     cursor: pointer;
-    border: 1px solid black;
+    border: 1px solid #ccc;
     width: 20px;
     height: 20px;
     text-align: center;

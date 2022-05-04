@@ -39,12 +39,12 @@ export const HeroContainer = styled.div`
    }
 
    @media(max-width: 1200px) {
-      background-position: 75% 75%;
+      background-position: 80% 75%;
       
     }
 
     @media(max-width: 768px) {
-      height: 150vh;
+      height: 125vh;
       ${StyledLink} {
          margin: 2rem auto 0 auto;
       }
@@ -156,13 +156,9 @@ export const BlockQuote = styled.blockquote`
 
 export const HeroContent = styled.div`
    z-index: 3;
-   height: calc(100vh - 80px);
+   height: calc(90vh - 80px);
    max-height: 100%;
    width: 100%;
-
-   @media(max-width: 768px) {
-      height: calc(70vh - 80px);
-    }
 `;
 
 export const HeroInfo = styled.div`

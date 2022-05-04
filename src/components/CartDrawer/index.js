@@ -31,83 +31,85 @@ export default function CartDrawer({ isOpen, toggle }) {
   return (
     <CartDrawerContainer isOpen={isOpen}>
 
-      <DrawerButtonWrap onClick={toggle}>
-        <CloseIcon />
-      </DrawerButtonWrap>
+      
 
       <CartContentWrapper>
-      <section>
-            <CartHeading>
-                Your Cart
-            </CartHeading>
+        <DrawerButtonWrap onClick={toggle}>
+            <CloseIcon />
+        </DrawerButtonWrap>
 
-            {!!checkout?.lineItems && (
-            <CartHeader>
-                <div>Product</div>
-                <div>Unit Price</div>
-                <div>Quantity</div>
-                <div>Amount</div>
-            </CartHeader>
-            )}
+        <section>
+                <CartHeading>
+                    Your Cart
+                </CartHeading>
 
-            {checkout?.lineItems?.map(item => ( 
-                <CartItem key={item.variant.id}>
-                    <div>
+                {!!checkout?.lineItems && (
+                <CartHeader>
+                    <div>Product</div>
+                    <div className='hidden-mobile'>Unit Price</div>
+                    <div>Quantity</div>
+                    <div className='hidden-mobile'>Amount</div>
+                </CartHeader>
+                )}
+
+                {checkout?.lineItems?.map(item => ( 
+                    <CartItem key={item.variant.id}>
                         <div>
-                            {item.title}
+                            <div>
+                                {item.title} /
+                            </div>
+                            <div>
+                                {item.variant.title === 'Default Title' ? '' : item.variant.title}
+                            </div>
+                        </div>
+                        <div className='hidden-mobile'>
+                            ${item.variant.price}
                         </div>
                         <div>
-                            {item.variant.title === 'Default Title' ? '' : item.variant.title}
+                            <QuantityAdjuster item={item} onAdjust={handleAdjustQuantity} />
                         </div>
-                    </div>
-                    <div>
-                        ${item.variant.price}
-                    </div>
-                    <div>
-                        <QuantityAdjuster item={item} onAdjust={handleAdjustQuantity} />
-                    </div>
-                    <div>
-                        ${(item.quantity * item.variant.price).toFixed(2)}
-                    </div>
-                    <div>
-                        <RemoveLineItem lineItemId={item.id} />
-                    </div>
-                </CartItem>
-            ))}
+                        <div className='hidden-mobile'>
+                            ${(item.quantity * item.variant.price).toFixed(2)}
+                        </div>
+                        <div>
+                            <RemoveLineItem lineItemId={item.id} />
+                        </div>
+                    </CartItem>
+                ))}
 
-            {!!checkout?.lineItems && (
-            <CartFooter>
-                <div>
-                    <strong>Total:</strong>
-                </div>
-                <div>
-                    <span>${checkout?.totalPrice}</span>
-                </div>
-            </CartFooter>
-            )}
-            {!checkout?.lineItems &&
-                <h4>
-                    Your cart is empty.
-                </h4>
-            }
-            <Footer>
-                <div>
-                    <Button onClick={toggle}>
-                        Continue shopping
-                    </Button>
-                </div>
-                <div>
-                    {!!checkout?.webUrl && (
-                        <Button onClick={() => {
-                            window.location.href = checkout.webUrl;
-                        }}
-                        >
-                            Checkout
+                {!!checkout?.lineItems && (
+                <CartFooter>
+                    <div>
+                        <strong>Total:</strong>
+                    </div>
+                    <div>
+                        <span>${checkout?.totalPrice}</span>
+                    </div>
+                </CartFooter>
+                )}
+                {!checkout?.lineItems &&
+                    <h4>
+                        Your cart is empty.
+                    </h4>
+                }
+                <Footer>
+                    <div>
+                        <Button onClick={toggle}>
+                            Continue shopping
                         </Button>
-                    )}
-                </div>
-            </Footer>
-        </section>
+                    </div>
+                    <div>
+                        {!!checkout?.webUrl && (
+                            <Button onClick={() => {
+                                window.location.href = checkout.webUrl;
+                            }}
+                            >
+                                Checkout
+                            </Button>
+                        )}
+                    </div>
+                </Footer>
+            </section>
       </CartContentWrapper>
 
     </CartDrawerContainer>
