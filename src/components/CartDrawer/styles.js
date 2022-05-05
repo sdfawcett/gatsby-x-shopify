@@ -13,6 +13,7 @@ export const CartDrawerContainer = styled.aside`
    top: 0;
    right: 0;
    overflow: auto;
+   box-shadow: -3px 0px 5px 0px rgba(0, 0, 0, 0.2);
    transition: 0.3s ease-in-out;
    opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
    top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};

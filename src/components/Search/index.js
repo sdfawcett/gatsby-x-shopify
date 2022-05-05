@@ -1,6 +1,6 @@
 import React from 'react';
 import {Input} from '../Input';
-import {Button} from '../Button';
+import {SearchButton} from '../SearchButton';
 import {FaSearch} from 'react-icons/fa';
 import {SearchForm} from './styles';
 import {navigate, useLocation} from '@reach/router';
@@ -31,9 +31,9 @@ export function Search() {
             onChange={(e) => setSearchTerm(e.currentTarget.value)} 
             placeholder="Search" 
             />
-            <Button>
+            <SearchButton>
                 <FaSearch />
-            </Button>
+            </SearchButton>
         </SearchForm>
     );
 }

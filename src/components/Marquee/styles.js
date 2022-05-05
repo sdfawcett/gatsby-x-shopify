@@ -1,14 +1,14 @@
 import styled from 'styled-components'
-import Marquee1Bg from "../../images/marquee-no-place-like-home.webp"
-import Marquee2Bg from "../../images/marquee-script-ohio-blackout-gameday-jacket.webp"
-import Marquee3Bg from "../../images/go-to-hoodie.webp"
-import Marquee4Bg from "../../images/the-ultimate-warrior.webp"
-import Marquee5Bg from "../../images/acadia-national-park-hoodie.webp"
-import Marquee6Bg from "../../images/club-tril-hoodie.webp"
-import Marquee7Bg from "../../images/budweiser-official-party-shirt.webp"
-import Marquee8Bg from "../../images/grateful-dead-steal-your-face-hoodie.webp"
-import Marquee9Bg from "../../images/budweiser-king-of-beers.webp"
-import Marquee10Bg from "../../images/block-ohio-state-coachs-jacket.webp"
+import Marquee1Bg from "../../images/undefeated-wts-tee.webp"
+import Marquee2Bg from "../../images/first-in-flight-tee.webp"
+import Marquee3Bg from "../../images/brooklyn-dagger.webp"
+import Marquee4Bg from "../../images/ohio-crest-tee.webp"
+import Marquee5Bg from "../../images/block-ohio-tee.webp"
+import Marquee6Bg from "../../images/presidents.webp"
+import Marquee7Bg from "../../images/eleven-warriors-vintage-hoodie.webp"
+import Marquee8Bg from "../../images/1ob-seal-hoodie.webp"
+import Marquee9Bg from "../../images/eleven-warriors-vintage-hat-scarlet.webp"
+import Marquee10Bg from "../../images/ohio-flag-sticker.webp"
 import {StyledLink} from '../StyledLink';
 
 export const MarqueeContainer = styled.section`
@@ -251,7 +251,7 @@ export const MarqueeContent = styled.div`
       font-size: 16px;
       text-transform: uppercase;
       display: inline-block;
-      color: black;
+      color: #bb0000;
       text-decoration: none;
       cursor: pointer;
 

@@ -8,10 +8,10 @@ export const ProductTileWrapper = styled.div`
     flex-direction: column;
     padding: 1rem;
     transition: all .25s ease;
+    text-align: center;
 
     &:hover {
-
-        box-shadow: 0 0 20px rgba(0, 0, 0, .05), 0 0px 40px rgba(0, 0, 0, .08);
+        box-shadow: 0 0 0 rgba(0, 0, 0, .05), 0 0px 10px rgba(0, 0, 0, .08);
         transform: translateY(-5px);
         background-color: white;
     }
@@ -19,12 +19,18 @@ export const ProductTileWrapper = styled.div`
     >${StyledLink} {
         text-decoration: none;
     }
+
+    >a {
+        text-decoration: none;
+    }
 `;
 
 export const Title = styled.div`
-    font-weight: bold;
+    font-weight: 400;
     font-size: 20px;
     margin: 20px 20px 0 20px;
+    font-family: 'Commissioner', sans-serif;
+    color: #333;
 `;
 
 export const Description = styled.div`
@@ -34,8 +40,8 @@ export const Description = styled.div`
 `;
 
 export const Price = styled.div`
-    font-style: italic;
     padding: 20px;
-    font-weight: bold;
+    font-weight: 400;
     margin-top: auto;
+    color: #333;
 `;

@@ -32,7 +32,7 @@ export const LogoContainer = styled.div`
 `;
 
 export const NavBg = styled.nav`
-    background: rgb(255, 255, 255, 0.3);
+    background: rgb(255, 255, 255, 0.9);
     height: 125px;
     display: flex;
     justify-content: space-between;

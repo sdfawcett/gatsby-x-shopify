@@ -1,6 +1,7 @@
 import React from 'react';
 import ProductContext from 'context/ProductContext';
 import { CategoryFilterItem } from './CategoryFilterItem';
+import { Search } from '../Search';
 import { FiltersWrapper } from './styles';
 
 export function Filters() {
@@ -8,6 +9,9 @@ export function Filters() {
 
     return (
         <FiltersWrapper>
+            <span>
+                <Search />
+            </span>
             <strong>
                 Categories
             </strong>

@@ -9,19 +9,19 @@ const fullWidthStyles = ({fullWidth}) => {
     }
 }
 
-export const Button = styled.button`
+export const SearchButton = styled.button`
     outline: none;
     padding: 0 10px;
-    height: 3rem;
+    height: 44px;
     box-shadow: none;
     font-size: 16px;
     font-family: 'Commissioner', sans-serif;
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
-    background: #bb0000;
-    color: white;
-    border: 4px solid #333;
+    background: white;
+    color: black;
+    border: 1px solid #333;
     position: relative;
     white-space: nowrap;
     transition: all .1s ease-in;
@@ -29,29 +29,11 @@ export const Button = styled.button`
 
     &:hover:not(:disabled) {
         color: white;
-        background: #700000;
+        background: black;
     }
 
-    &:active:not(:disabled) {
-        top: .1rem;
-    }
 
-    &:active::after {
-        border-top-width: .4rem;
-        bottom: -1.15rem;
-    }
 
-    &::after {
-        content: '';
-        height: 0;
-        border: .5rem solid transparent;
-        border-top-color: #333;
-        position: absolute;
-        left: -.25rem;
-        bottom: -1.25rem;
-        display: inline-block;
-        width: calc(100% - .5rem);
-    }
 
     &:disabled {
         border-color: #999;

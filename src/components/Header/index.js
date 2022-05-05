@@ -4,7 +4,6 @@ import { Cart } from '../Cart';
 import { CartLite } from '../CartLite';
 import CowtownLogoLight from '../../images/svg/cowtown-logo-light-cropped.svg';
 import CowtownLogoDark from '../../images/svg/cowtown-logo-dark-cropped.svg';
-import { Search } from '../Search';
 
 
 export function Header({ toggle }) {
@@ -35,10 +34,6 @@ export function Header({ toggle }) {
                     <CowtownLogoLight />
                 </LogoContainer>
                 </NavLink>
-
-                <span>
-                    <Search />
-                </span>
                 
                 <CartLite toggle={toggle} />
             </NavTrans> :
@@ -49,10 +44,6 @@ export function Header({ toggle }) {
                     <CowtownLogoDark />
                 </LogoContainer>
                 </NavLink>
-
-                <span>
-                    <Search />
-                </span>
                 
                 <Cart toggle={toggle} />
             </NavBg>

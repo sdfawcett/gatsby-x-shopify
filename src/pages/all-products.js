@@ -3,6 +3,7 @@ import { LayoutLite, Filters, ProductsGrid, SEO } from 'components';
 import ProductContext from 'context/ProductContext';
 import styled from 'styled-components';
 import queryString from 'query-string';
+
 import {useLocation} from '@reach/router';
 
 const Content = styled.div`
@@ -83,6 +84,8 @@ export default function AllProducts() {
                 <h4>{filteredProducts.length} products</h4>
             }
             <Content>
+                
+
                 <Filters />
                 {!filteredProducts.length && (
                     <div>

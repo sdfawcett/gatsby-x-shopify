@@ -1,6 +1,15 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import EmailBg from "../../images/cta-bg.webp"
 import {StyledLink} from '../StyledLink'
+
+const fullWidthStyles = ({fullWidth}) => {
+  if (fullWidth) {
+      return css`
+          display: block;
+          width: 100%;
+      `
+  }
+}
 
 export const EmailContainer = styled.div`
    background: linear-gradient(
@@ -20,6 +29,10 @@ export const EmailContainer = styled.div`
 
    @media screen and (max-width: 768px) {
     padding: 0;
+   }
+
+   @media screen and (max-width: 400px) {
+    height: 545px;
    }
 `;
 
@@ -61,21 +74,55 @@ export const FormWrap = styled.div`
   }
 
   ${StyledLink} {
-      padding: 10px;
-      background: white;
-      border: 1px solid black;
-      font-weight: bold;
-      font-size: 16px;
-      text-transform: uppercase;
-      display: inline-block;
-      color: black;
-      text-decoration: none;
-      cursor: pointer;
+    outline: none;
+    padding: 1rem 0.5rem;
+    box-shadow: none;
+    font-size: 16px;
+    font-family: 'Commissioner',sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    background: #bb0000;
+    color: white;
+    border: 4px solid #333;
+    position: relative;
+    white-space: nowrap;
+    transition: all .1s ease-in;
+    ${fullWidthStyles}
 
-      &:hover {
-            color: white;
-            background: black;
-      }
+    &:hover:not(:disabled) {
+        color: white;
+        background: #700000;
+    }
+
+    &:active:not(:disabled) {
+        top: .1rem;
+    }
+
+    &:active::after {
+        border-top-width: .4rem;
+        bottom: -1.15rem;
+    }
+
+    &::after {
+        content: '';
+        height: 0;
+        border: .5rem solid transparent;
+        border-top-color: #333;
+        position: absolute;
+        left: -.25rem;
+        bottom: -1.25rem;
+        display: inline-block;
+        width: calc(100% - .5rem);
+    }
+
+    &:disabled {
+        border-color: #999;
+        cursor: not-allowed;
+        color: #999;
+    }
    }
 
   @media screen and (max-width: 768px) {

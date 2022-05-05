@@ -1,6 +1,15 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import HeroStaticBg from "../../images/hero-wts.webp"
 import {StyledLink} from '../StyledLink';
+
+const fullWidthStyles = ({fullWidth}) => {
+   if (fullWidth) {
+       return css`
+           display: block;
+           width: 100%;
+       `
+   }
+}
 
 export const HeroContainer = styled.div`
    background: linear-gradient(
@@ -21,20 +30,53 @@ export const HeroContainer = styled.div`
 
 
    ${StyledLink} {
-      padding: 10px;
-      background: white;
-      border: 1px solid black;
-      font-weight: bold;
+      outline: none;
+      padding: 1rem 0.5rem;
+      box-shadow: none;
       font-size: 16px;
-      text-transform: uppercase;
-      display: inline-block;
-      color: black;
-      text-decoration: none;
+      font-family: 'Commissioner', sans-serif;
       cursor: pointer;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none;
+      background: #bb0000;
+      color: white;
+      border: 4px solid #333;
+      position: relative;
+      white-space: nowrap;
+      transition: all .1s ease-in;
+      ${fullWidthStyles}
 
-      &:hover {
-            color: white;
-            background: black;
+      &:hover:not(:disabled) {
+         color: white;
+         background: #700000;
+      }
+
+      &:active:not(:disabled) {
+         top: .1rem;
+      }
+
+      &:active::after {
+         border-top-width: .4rem;
+         bottom: -1.15rem;
+      }
+
+      &::after {
+         content: '';
+         height: 0;
+         border: .5rem solid transparent;
+         border-top-color: #333;
+         position: absolute;
+         left: -.25rem;
+         bottom: -1.25rem;
+         display: inline-block;
+         width: calc(100% - .5rem);
+      }
+
+      &:disabled {
+         border-color: #999;
+         cursor: not-allowed;
+         color: #999;
       }
    }
 
@@ -92,8 +134,8 @@ export const QuoteWrapper = styled.div`
 
 export const QuoteBody = styled.div`
    position: relative;
-   border-top: 0.45em solid darkslateblue;
-   border-bottom: 0.45em solid darkslateblue;
+   border-top: 0.45em solid #bb0000;
+   border-bottom: 0.45em solid #bb0000;
    padding: 20px 0!important;
    letter-spacing: -0.08em;
    transform: rotate(2deg);

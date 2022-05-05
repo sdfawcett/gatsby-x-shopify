@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const ProductsGridWrapper = styled.section`
     display: grid;
+    margin-bottom: 4rem;
     grid-gap: 5px;
     grid-template-columns: 1fr;
 

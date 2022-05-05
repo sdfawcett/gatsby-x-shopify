@@ -31,7 +31,7 @@ export default function FastMarquee() {
 
                <MarqueeContentContainer>
                   <MarqueeContent>
-                     <StyledLink to={`/products/theres-no-place-like-home-ohio-state`}>Buy Now</StyledLink>
+                     <StyledLink to={`/products/undefeated-out-of-conference-tee`}>Buy Now</StyledLink>
                   </MarqueeContent>
                </MarqueeContentContainer>
 
@@ -41,7 +41,7 @@ export default function FastMarquee() {
 
                <MarqueeContentContainer>
                   <MarqueeContent>
-                     <StyledLink to={`/products/marquee-script-ohio-blackout-gameday-jacket`}>Buy Now</StyledLink>
+                     <StyledLink to={`/products/thanks-for-the-wind-tee`}>Buy Now</StyledLink>
                   </MarqueeContent>
                </MarqueeContentContainer>
 
@@ -51,7 +51,7 @@ export default function FastMarquee() {
 
                <MarqueeContentContainer>
                   <MarqueeContent>
-                     <StyledLink to={`/products/go-to-hoodie`}>Buy Now</StyledLink>
+                     <StyledLink to={`/products/brooklyn-dagger-tee`}>Buy Now</StyledLink>
                   </MarqueeContent>
                </MarqueeContentContainer>
 
@@ -61,7 +61,7 @@ export default function FastMarquee() {
 
                <MarqueeContentContainer>
                   <MarqueeContent>
-                     <StyledLink to={`/products/the-ultimate-warrior`}>Buy Now</StyledLink>
+                     <StyledLink to={`/products/ohio-crest-tee`}>Buy Now</StyledLink>
                   </MarqueeContent>
                </MarqueeContentContainer>
 
@@ -71,7 +71,7 @@ export default function FastMarquee() {
 
                <MarqueeContentContainer>
                   <MarqueeContent>
-                     <StyledLink to={`/products/acadia-national-park-hoodie`}>Buy Now</StyledLink>
+                     <StyledLink to={`/products/block-ohio-tee`}>Buy Now</StyledLink>
                   </MarqueeContent>
                </MarqueeContentContainer>
 
@@ -81,7 +81,7 @@ export default function FastMarquee() {
 
                <MarqueeContentContainer>
                   <MarqueeContent>
-                     <StyledLink to={`/products/club-tril-hoodie`}>Buy Now</StyledLink>
+                     <StyledLink to={`/products/president-dogs-tee`}>Buy Now</StyledLink>
                   </MarqueeContent>
                </MarqueeContentContainer>
 
@@ -91,7 +91,7 @@ export default function FastMarquee() {
 
                <MarqueeContentContainer>
                   <MarqueeContent>
-                     <StyledLink to={`/products/budweiser-official-party-shirt`}>Buy Now</StyledLink>
+                     <StyledLink to={`/products/eleven-warriors-vintage-hoodie`}>Buy Now</StyledLink>
                   </MarqueeContent>
                </MarqueeContentContainer>
 
@@ -101,7 +101,7 @@ export default function FastMarquee() {
 
                <MarqueeContentContainer>
                   <MarqueeContent>
-                     <StyledLink to={`/products/grateful-dead-steal-your-face-hoodie`}>Buy Now</StyledLink>
+                     <StyledLink to={`/products/1st-ohio-battery-hoodie`}>Buy Now</StyledLink>
                   </MarqueeContent>
                </MarqueeContentContainer>
 
@@ -111,7 +111,7 @@ export default function FastMarquee() {
 
                <MarqueeContentContainer>
                   <MarqueeContent>
-                     <StyledLink to={`/products/budweiser-king-of-beers`}>Buy Now</StyledLink>
+                     <StyledLink to={`/products/eleven-warriors-vintage-snapback`}>Buy Now</StyledLink>
                   </MarqueeContent>
                </MarqueeContentContainer>
 
@@ -121,7 +121,7 @@ export default function FastMarquee() {
             
                <MarqueeContentContainer>
                   <MarqueeContent>
-                     <StyledLink to={`/products/block-ohio-state-coachs-jacket`}>Buy Now</StyledLink>
+                     <StyledLink to={`/products/ohio-flag-sticker`}>Buy Now</StyledLink>
                   </MarqueeContent>
                </MarqueeContentContainer>
             
