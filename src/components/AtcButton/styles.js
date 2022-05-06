@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 
 const fullWidthStyles = ({fullWidth}) => {
     if (fullWidth) {
@@ -8,6 +8,12 @@ const fullWidthStyles = ({fullWidth}) => {
         `
     }
 }
+
+const sheen = keyframes`
+    100% {
+            transform: rotateZ(60deg) translate(1em, -9em);
+        }
+`;
 
 export const Button = styled.button`
     outline: none;
@@ -19,11 +25,10 @@ export const Button = styled.button`
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
-    background: white;
-    color: #262626;
+    color: white;
     border: 1px solid #262626;
     white-space: nowrap;
-    background: #5a99d4;
+    background: #bb0000;
     position: relative;
     overflow: hidden;
     box-shadow:-2px 2px 2px #ccc;
@@ -38,12 +43,12 @@ export const Button = styled.button`
         left: -50%;
         background: linear-gradient(to bottom, rgba(229, 172, 142, 0), rgba(255,255,255,0.5) 50%, rgba(229, 172, 142, 0));
         transform: rotateZ(60deg) translate(-5em, 7.5em);
-        animation: sheen 4s forwards infinite;
+        animation: ${sheen} 4s forwards infinite;
     }
 
     &:hover:not(:disabled) {
         color: white;
-        background: #262626;
+        background: #700000;
         border: 1px solid rgba(0, 0, 0, 0);
     }
 
@@ -51,11 +56,5 @@ export const Button = styled.button`
         border-color: #999;
         cursor: not-allowed;
         color: #999;
-    }
-
-    @keyframes sheen {
-        100% {
-            transform: rotateZ(60deg) translate(1em, -9em);
-        }
     }
 `;

@@ -4,28 +4,31 @@ export const Grid = styled.section`
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 20px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+
 
     >div:first-child {
-            border-left: 1px solid #ccc;
+            border: none;
             padding: 1rem;
+            order: 2;
         }
 
-        
-
+    >div:last-child {
+        order: 1;
+    }
 
     @media(min-width: 768px) {
         grid-template-columns: 2fr 1fr;
 
         >div:first-child {
             order: 2;
+            border-left: 1px solid #ccc;
         }
 
         >div:last-child {
             order: 1;
         }
     }
+
 `;
 
 export const SelectWrapper = styled.div`
@@ -41,6 +44,16 @@ export const SelectWrapper = styled.div`
 
 export const ProductInfoWrapper = styled.div`
     max-width: 40rem;
+
+    h1 {
+        font-family: 'Merriweather', serif;
+        font-size: 2rem;
+    }
+
+    p {
+        margin-bottom: 2rem;
+        font-family: 'Commissioner', sans-serif;
+    }
 `;
 
 export const ProductControlsWrapper = styled.div`
