@@ -18,5 +18,5 @@ export const AdjusterButton = styled.div`
     border-radius: 5px;
     font-weight: bold;
     background-color: #E1E8EE;
-    color: black;
+    color: #262626;
 `;

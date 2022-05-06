@@ -16,7 +16,7 @@ export const CartFooter = styled.div`
 export const CartHeader = styled.div`
 display: grid;
 grid-template-columns: 2fr 1fr 2fr 1fr 40px;
-border-bottom: 1px solid black;
+border-bottom: 1px solid #262626;
 font-weight: bold;
 
 >div {
@@ -26,7 +26,7 @@ font-weight: bold;
 `;
 
 export const CartItem = styled.div`
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #262626;
     display: grid;
     grid-template-columns: 2fr 1fr 2fr 1fr 40px;
 

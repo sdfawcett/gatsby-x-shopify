@@ -246,7 +246,7 @@ export const MarqueeContent = styled.div`
    ${StyledLink} {
       padding: 10px;
       background: white;
-      border: 1px solid black;
+      border: 1px solid #262626;
       font-weight: bold;
       font-size: 16px;
       text-transform: uppercase;
@@ -257,7 +257,7 @@ export const MarqueeContent = styled.div`
 
       &:hover {
             color: white;
-            background: black;
+            background: #262626;
       }
    }
 `;

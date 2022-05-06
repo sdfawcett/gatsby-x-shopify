@@ -14,4 +14,9 @@ export const MarqueeItem = styled.p`
    margin: 5px 15rem 0 0;
    font-size: 1.5rem;
    font-family: 'Commissioner', sans-serif;
+   color: #262626;
+
+   @media(max-width: 768px) {
+      margin: 5px 10rem 0 0;
+    }
 `;

@@ -26,7 +26,7 @@ export const FeaturedProductsWrapper = styled.section`
          text-decoration: none;
          background: #bb0000;
          color: white;
-         border: 4px solid #333;
+         border: 4px solid #262626;
          position: relative;
          white-space: nowrap;
          transition: all .1s ease-in;
@@ -50,7 +50,7 @@ export const FeaturedProductsWrapper = styled.section`
          content: '';
          height: 0;
          border: .5rem solid transparent;
-         border-top-color: #333;
+         border-top-color: #262626;
          position: absolute;
          left: -.25rem;
          bottom: -1.25rem;

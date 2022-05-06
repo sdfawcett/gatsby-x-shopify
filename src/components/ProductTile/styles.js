@@ -30,7 +30,7 @@ export const Title = styled.div`
     font-size: 20px;
     margin: 20px 20px 0 20px;
     font-family: 'Commissioner', sans-serif;
-    color: #333;
+    color: #262626;
 `;
 
 export const Description = styled.div`
@@ -43,5 +43,5 @@ export const Price = styled.div`
     padding: 20px;
     font-weight: 400;
     margin-top: auto;
-    color: #333;
+    color: #262626;
 `;

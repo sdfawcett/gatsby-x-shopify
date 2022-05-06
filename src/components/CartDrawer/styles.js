@@ -44,7 +44,7 @@ export const CloseIcon = styled(FaTimes)`
 export const CartContentWrapper = styled.div`
     width: 90%;
     padding: 1rem;
-    color: black;
+    color: #262626;
     border-radius: 10px;
 
     @media screen and (max-width: 420px) {

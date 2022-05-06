@@ -1,8 +1,8 @@
 import React from 'react';
-import {Input} from '../Input';
+import {Input} from '../SearchInput';
 import {SearchButton} from '../SearchButton';
 import {FaSearch} from 'react-icons/fa';
-import {SearchForm} from './styles';
+import {Heading, SearchForm, InputContainer, Suggest} from './styles';
 import {navigate, useLocation} from '@reach/router';
 import queryString from 'query-string';
 
@@ -26,14 +26,20 @@ export function Search() {
     };
     
     return (
+        <>
+        <Heading>Product Search</Heading>
         <SearchForm onSubmit={handleSubmit}>
-            <Input value={searchTerm} 
-            onChange={(e) => setSearchTerm(e.currentTarget.value)} 
-            placeholder="Search" 
-            />
+            <InputContainer>
+                <Input value={searchTerm} 
+                onChange={(e) => setSearchTerm(e.currentTarget.value)} 
+                placeholder="Search" 
+                />
+                <Suggest id='suggest' />
+            </InputContainer>
             <SearchButton>
                 <FaSearch />
             </SearchButton>
         </SearchForm>
+        </>
     );
 }

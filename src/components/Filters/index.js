@@ -9,11 +9,12 @@ export function Filters() {
 
     return (
         <FiltersWrapper>
-            <span>
+            <div className='search-input-container'>
                 <Search />
-            </span>
+            </div>
+            
             <strong>
-                Categories
+                Filter By Category
             </strong>
             {collections.map(collection => (
                 <CategoryFilterItem

@@ -20,8 +20,8 @@ export const SearchButton = styled.button`
     font-weight: bold;
     text-transform: uppercase;
     background: white;
-    color: black;
-    border: 1px solid #333;
+    color: #bb0000;
+    border: 1px solid #262626;
     position: relative;
     white-space: nowrap;
     transition: all .1s ease-in;
@@ -29,7 +29,7 @@ export const SearchButton = styled.button`
 
     &:hover:not(:disabled) {
         color: white;
-        background: black;
+        background: #262626;
     }
 
 

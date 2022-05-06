@@ -19,7 +19,7 @@ export function CollectionTile({destination, description, title, backgroundImage
                     <Title sale={sale}>{title}</Title>
                     <Description sale={sale}>{description}</Description>
                     <StyledLink to={destination}>
-                        Shop now
+                        Shop Now
                     </StyledLink>
                 </div>
             </CollectionTileContent>

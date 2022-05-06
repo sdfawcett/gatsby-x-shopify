@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const CartWrapper = styled.div`
     display: flex;
-    color: black;
+    color: #262626;
     text-decoration: none;
     padding-left: 16px;
     color: white;

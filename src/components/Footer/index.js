@@ -11,9 +11,14 @@ import
 } 
 from './styles'
 import {Link} from 'gatsby';
-import CowtownLogoDark from '../../images/svg/cowtown-logo-dark-cropped.svg';
+import CowtownLogoLight from '../../images/svg/cowtown-logo-light-cropped.svg';
 
 export default function Footer() {
+
+   const getCurrentYear = () => {
+      return new Date().getFullYear();
+    };
+
   return (
     <FooterContainer>
        <FooterLinksWrapper>
@@ -21,36 +26,29 @@ export default function Footer() {
 
             <Link to='/'>
                <LogoContainer>
-                  <CowtownLogoDark />
+                  <CowtownLogoLight />
                </LogoContainer>
             </Link>
 
              <p>We strive to create the best experiences for our customers</p>
+             <p>&copy; {getCurrentYear()} Cowtown Tees, Inc. All rights reserved.</p>
           </FooterDesc>
           <FooterLinkItems>
-             <FooterLinkTitle>Contact Us</FooterLinkTitle>
-             <FooterLink to='/'>Contact</FooterLink>
-             <FooterLink to='/'>Support</FooterLink>
-             <FooterLink to='/'>Contact</FooterLink>
-             <FooterLink to='/'>Refund Policy</FooterLink>
+             <FooterLinkTitle>Contact</FooterLinkTitle>
+             <FooterLink to='/'>Help &#38; Contact</FooterLink>
+             <FooterLink to='/'>Locations</FooterLink>
           </FooterLinkItems>
        </FooterLinksWrapper>
 
        <FooterLinksWrapper>
          <FooterLinkItems>
-             <FooterLinkTitle>Contact Us</FooterLinkTitle>
-             <FooterLink to='/'>Contact</FooterLink>
-             <FooterLink to='/'>Support</FooterLink>
-             <FooterLink to='/'>Contact</FooterLink>
-             <FooterLink to='/'>Refund Policy</FooterLink>
+             <FooterLinkTitle>Returns &#38; Exchanges</FooterLinkTitle>
+             <FooterLink to='/'>Return Policy</FooterLink>
           </FooterLinkItems>
 
           <FooterLinkItems>
-             <FooterLinkTitle>Contact Us</FooterLinkTitle>
-             <FooterLink to='/'>Contact</FooterLink>
-             <FooterLink to='/'>Support</FooterLink>
-             <FooterLink to='/'>Contact</FooterLink>
-             <FooterLink to='/'>Refund Policy</FooterLink>
+             <FooterLinkTitle>Legal</FooterLinkTitle>
+             <FooterLink to='/'>Privacy &#38; Terms</FooterLink>
           </FooterLinkItems>
        </FooterLinksWrapper>
 

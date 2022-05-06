@@ -15,13 +15,13 @@ export const Button = styled.button`
     height: 44px;
     line-height: 44px;
     font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Commissioner', sans-serif;
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
     background: white;
-    color: black;
-    border: 1px solid black;
+    color: #262626;
+    border: 1px solid #262626;
     white-space: nowrap;
     background: #5a99d4;
     position: relative;
@@ -43,7 +43,7 @@ export const Button = styled.button`
 
     &:hover:not(:disabled) {
         color: white;
-        background: black;
+        background: #262626;
         border: 1px solid rgba(0, 0, 0, 0);
     }
 

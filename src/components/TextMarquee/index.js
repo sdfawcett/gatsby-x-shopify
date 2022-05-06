@@ -16,11 +16,11 @@ export default function TextMarquee() {
          </MarqueeItem>
 
          <MarqueeItem>
-            Cleveland Browns
+            William Tecumseh Sherman
          </MarqueeItem>
 
          <MarqueeItem>
-            Cleveland Guardians
+            Columbus
          </MarqueeItem>
 
          <MarqueeItem>
@@ -32,7 +32,7 @@ export default function TextMarquee() {
          </MarqueeItem>
 
          <MarqueeItem>
-            Baseball
+            Afro Duck
          </MarqueeItem>
 
          <MarqueeItem>
@@ -48,23 +48,23 @@ export default function TextMarquee() {
          </MarqueeItem>
 
          <MarqueeItem>
-            Cleveland Browns
+            Mirror Lake
          </MarqueeItem>
 
          <MarqueeItem>
-            Cleveland Guardians
+            The Wright Brothers
          </MarqueeItem>
 
          <MarqueeItem>
-            Buckeyes
+            Block O
          </MarqueeItem>
 
          <MarqueeItem>
-            Football
+            Neil Armstrong
          </MarqueeItem>
 
          <MarqueeItem>
-            Baseball
+            John Glenn
          </MarqueeItem>
 
          <MarqueeItem>
@@ -72,7 +72,7 @@ export default function TextMarquee() {
          </MarqueeItem>
 
          <MarqueeItem>
-            The Horseshoe
+            Brutus Buckeye
          </MarqueeItem>
 
        </Marquee>

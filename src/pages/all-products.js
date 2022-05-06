@@ -80,11 +80,8 @@ export default function AllProducts() {
                     Search Term: <strong>'{searchTerm}'</strong>
                 </h3>
             )}
-            {!!filteredProducts.length && 
-                <h4>{filteredProducts.length} products</h4>
-            }
+
             <Content>
-                
 
                 <Filters />
                 {!filteredProducts.length && (
@@ -118,6 +115,9 @@ export default function AllProducts() {
                 )}
                 {!!filteredProducts.length && (
                     <div>
+                        {!!filteredProducts.length && 
+                            <h4>{filteredProducts.length} products</h4>
+                        }
                         <ProductsGrid products={filteredProducts} />
                     </div>
                 )}

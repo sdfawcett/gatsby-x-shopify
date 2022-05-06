@@ -6,8 +6,8 @@ export const FooterContainer = styled.div`
    grid-template-columns: repeat(2, 1fr);
    margin: 0 auto;
    padding: 0.5rem;
-   color: #000;
-   background: #fafafb;
+   color: white;
+   background: #262626;
 `;
 
 export const LogoContainer = styled.div`
@@ -26,10 +26,19 @@ export const FooterLinksWrapper = styled.div`
 
 export const FooterDesc = styled.div`
    padding: 0 2rem;
+   color: #ccc;
 
    h1 {
       margin-bottom: 3rem;
       color: #f26a2e;
+   }
+
+   p {
+      margin-bottom: 1rem;
+   }
+
+   p:last-child {
+      font-size: .75rem;
    }
 
    @media screen and (max-width: 400px) {
@@ -51,16 +60,19 @@ export const FooterLinkItems = styled.div`
 export const FooterLinkTitle = styled.h2`
    font-size: 14px;
    margin-bottom: 16px;
+   font-weight: bold;
+   letter-spacing: 1px;
+   color: #ccc;
 `;
 
 export const FooterLink = styled(Link)`
    text-decoration: none;
    margin-bottom: 0.5rem;
    font-size: 14px;
-   color: #3d3d4e;
+   color: #ccc;
 
    &:hover {
-      color: #f26a2e;
+      color: #bb0000;
       transition: 0.3s ease-out;
    }
 `;
