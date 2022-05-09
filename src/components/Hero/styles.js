@@ -85,6 +85,10 @@ export const HeroContainer = styled.div`
       
     }
 
+    @media screen and (min-width:768px) and (max-width:1000px) and (orientation:landscape) {
+      height: 165vh;
+    }
+
     @media(max-width: 768px) {
       height: 125vh;
       ${StyledLink} {
