@@ -85,6 +85,10 @@ export const HeroContainer = styled.div`
       
     }
 
+    @media screen and (min-width:768px) and (max-width:1000px) and (orientation:landscape) {
+      height: 165vh;
+    }
+
     @media(max-width: 768px) {
       height: 125vh;
       ${StyledLink} {
@@ -126,9 +130,7 @@ export const QuoteWrapper = styled.div`
    width: 35%;
 
    @media(max-width: 768px) {
-      top: 75%;
-      left: 11%;
-      width: 70%;
+      display: none;
     }
 `;
 
@@ -226,7 +228,6 @@ export const HeroItems = styled.div`
       max-width: 100%;
       margin: 0 1rem;
       text-align: center;
-      justify-content: flex-start;
     }
 `;
 

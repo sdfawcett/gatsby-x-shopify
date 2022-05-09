@@ -3,6 +3,7 @@ import reset from "styled-reset"
 
 export const GlobalStyle = createGlobalStyle`
   ${reset}
+
   select{
     height: 40px;
     font-size: 16px;

@@ -29,6 +29,19 @@ export const Grid = styled.section`
         }
     }
 
+    @media(max-width: 400px) {
+
+        >div:first-child {
+            order: 2;
+            max-width: 64%;
+        }
+
+        >div:last-child {
+            order: 1;
+            max-width: 60%;
+        }
+    }
+
 `;
 
 export const SelectWrapper = styled.div`
@@ -50,6 +63,12 @@ export const ProductInfoWrapper = styled.div`
         font-size: 2rem;
     }
 
+    @media(max-width: 400px) {
+        h1 {
+        font-size: 1.5rem;
+    }
+    }
+
     p {
         margin-bottom: 2rem;
         font-family: 'Commissioner', sans-serif;
@@ -65,4 +84,14 @@ export const Price = styled.div`
     margin-top: 40px 0;
     font-weight: bold;
     font-size: 30px;
+`;
+
+export const NavWrapper = styled.div`
+    @media(max-width: 600px) {
+        width: 100%;
+
+        >button {
+            width: 100%;
+        }
+    }
 `;

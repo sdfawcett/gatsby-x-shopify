@@ -38,14 +38,16 @@ export default function Hero() {
 
 
             <HeroInfo>
-            <QuoteWrapper>
-              <QuoteBody>
-                <QuoteQMark>&rdquo;</QuoteQMark>
-                <QuoteBase>
-                  <BlockQuote>Courage: a perfect sensibility of the measure of danger, and a mental willingness to endure it. <cite>- William Tecumseh Sherman</cite></BlockQuote>
-                </QuoteBase>
-              </QuoteBody>
-            </QuoteWrapper> 
+
+              <QuoteWrapper>
+                <QuoteBody>
+                  <QuoteQMark>&rdquo;</QuoteQMark>
+                  <QuoteBase>
+                    <BlockQuote>Courage: a perfect sensibility of the measure of danger, and a mental willingness to endure it. <cite>- William Tecumseh Sherman</cite></BlockQuote>
+                  </QuoteBase>
+                </QuoteBody>
+              </QuoteWrapper> 
+
             </HeroInfo>   
          </HeroItems>
        </HeroContent>

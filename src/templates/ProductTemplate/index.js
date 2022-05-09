@@ -3,8 +3,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { LayoutLite, ImageGallery, ProductQuantityAdder, Button, SEO } from 'components';
-import ProductTabs from '../../ProductTabs';
-import { Grid, ProductInfoWrapper, SelectWrapper, Price, ProductControlsWrapper } from './styles';
+import { Grid, NavWrapper, ProductInfoWrapper, SelectWrapper, Price, ProductControlsWrapper } from './styles';
 import CartContext from 'context/CartContext';
 import { navigate, useLocation } from '@reach/router';
 import queryString from 'query-string';
@@ -49,9 +48,11 @@ export default function ProductTemplate(props) {
             description={props.data.shopifyProduct.description}
             title={props.data.shopifyProduct.title} 
             />
-            <Button onClick={() => navigate(-1)}>
-                Back to products
-            </Button>
+            <NavWrapper>
+                <Button id='back' onClick={() => navigate(-1)}>
+                    Back to products
+                </Button>
+            </NavWrapper>
             <Grid>
                 <div>
                     <ProductInfoWrapper>
@@ -81,7 +82,6 @@ export default function ProductTemplate(props) {
                                     variantId={selectedVariant.id} 
                                     />
                                 </ProductControlsWrapper>
-                                <ProductTabs />
                             </>
                         )}
                     </>

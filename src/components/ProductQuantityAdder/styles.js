@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const ProductQuantityAdderWrapper = styled.div`
     margin-top:20px;
-    width: 60%;
+    width: 70%;
 
     @media(max-width: 600px) {
             width: 100%;

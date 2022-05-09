@@ -21,7 +21,6 @@ export const EmailContainer = styled.div`
    background-size: cover;
    height: 450px;
    width: 100%;
-   padding: 2rem;
    color: #fff;
    display: flex;
    justify-content: center;
