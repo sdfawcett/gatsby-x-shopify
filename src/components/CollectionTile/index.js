@@ -7,7 +7,9 @@ import "aos/dist/aos.css"
 
 export function CollectionTile({destination, description, title, backgroundImage, sale}) {
     useEffect(() => {
-        Aos.init({})
+        Aos.init({
+            duration: 1000
+        })
       }, [])
     return (
         <CollectionTileWrapper data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000" data-aos-once="true">

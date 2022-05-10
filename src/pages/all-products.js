@@ -46,8 +46,6 @@ export default function AllProducts() {
         });
     }
 
-    console.log(collectionProductMap);
-
     const filterByCategory = (product) => {
         if (Object.keys(selectedCollectionIdsMap).length) {
             for (let key in selectedCollectionIdsMap) {

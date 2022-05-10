@@ -1,6 +1,6 @@
 import React from 'react';
 import ProductContext from 'context/ProductContext';
-import { Heading, FeaturedProductsWrapper } from './styles';
+import { FeaturedProductsWrapper } from './styles';
 import { ProductsGrid } from '../ProductsGrid';
 import {StyledLink} from '../StyledLink'
 
@@ -8,7 +8,7 @@ export function FeaturedProducts() {
     const {collections} = React.useContext(ProductContext);
 
     const featuredCollection = collections.find(
-        collection => collection.title === 'Featured Hats'
+        collection => collection.title === 'Featured Items'
         );
 
     return (

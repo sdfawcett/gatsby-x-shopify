@@ -5,9 +5,7 @@ import
    DrawerButtonWrap,
    CloseIcon,
    CartContentWrapper,
-   CartContentMenu,
-   CartDrawerLink,
-   BtnWrap,
+   EmptyCartContentWrapper,
    CartHeading,
    CartItem,
    CartHeader,
@@ -18,7 +16,6 @@ from './styles'
 import CartContext from 'context/CartContext'
 import { QuantityAdjuster } from '../QuantityAdjuster'
 import { RemoveLineItem } from '../RemoveLineItem'
-import { navigate } from '@reach/router'
 import { Button } from '../Button'
 
 export default function CartDrawer({ isOpen, toggle }) {
@@ -88,9 +85,11 @@ export default function CartDrawer({ isOpen, toggle }) {
                 </CartFooter>
                 )}
                 {!checkout?.lineItems &&
-                    <h4>
-                        Your cart is empty.
-                    </h4>
+                    <EmptyCartContentWrapper>
+                        <h4>
+                            Your cart is empty.
+                        </h4>
+                    </EmptyCartContentWrapper>
                 }
                 <Footer>
                     <div>

@@ -2,6 +2,16 @@ import styled from 'styled-components';
 
 export const ImageGalleryWrapper = styled.section`
 
+    >div:first-child {
+        max-width: 75%;
+        margin: auto;
+
+        @media(max-width: 450px) {
+            max-width: 100%;
+            margin: auto;
+        }
+    }
+
     >div:last-child {
         margin-top: 5px;
         display: grid;

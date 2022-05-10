@@ -180,4 +180,20 @@ export const BtnWrap = styled.div`
   justify-content: center;
 `;
 
+export const EmptyCartContentWrapper = styled.div`
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 10px;
+`;
+
+export const EmptyCartRow = styled.div`
+  display: flex;
+`
+
+export const EmptyCartCol = styled.div`
+  width: 50%;
+  flex-direction: column;
+`
+
 

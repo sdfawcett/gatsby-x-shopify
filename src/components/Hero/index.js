@@ -1,9 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import 
 { 
    HeroContainer, 
-   HeroBg, 
-   VideoBg, 
    QuoteWrapper,
    QuoteBody,
    QuoteQMark,
@@ -16,22 +14,29 @@ import
    HeroP, 
 } 
 from './styles'
+import Aos from "aos"
+import "aos/dist/aos.css"
 import {StyledLink} from '../StyledLink'
 
 export default function Hero() {
+  useEffect(() => {
+    Aos.init({
+      duration: 2000
+    })
+  }, [])
   return (
     <HeroContainer>
        
        <HeroContent>
          <HeroItems>
-            <HeroH1>
+            <HeroH1 data-aos="fade-right">
               <h1>The Great State of Ohio</h1>
             </HeroH1>
-            <HeroP>
+            <HeroP data-aos="fade-right">
               <p>Celebrate the 17th state in all of its glory with our Ohio-themed apparel and merch.</p>
             </HeroP>
             
-            <StyledLink to='/all-products'>
+            <StyledLink data-aos="fade-right" to='/all-products'>
                 View Products
             </StyledLink>        
 
@@ -39,7 +44,7 @@ export default function Hero() {
 
             <HeroInfo>
 
-              <QuoteWrapper>
+              <QuoteWrapper data-aos="fade-up-left" data-aos-delay="100">
                 <QuoteBody>
                   <QuoteQMark>&rdquo;</QuoteQMark>
                   <QuoteBase>

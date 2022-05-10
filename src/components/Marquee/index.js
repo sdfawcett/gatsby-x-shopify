@@ -15,11 +15,8 @@ import
    MarqueeCard10,
    MarqueeContentContainer,
    MarqueeContent,
-   Title
 } 
 from './styles'
-import { Link } from 'gatsby';
-import Img from 'gatsby-image';
 import {StyledLink} from '../StyledLink';
 
 export default function FastMarquee() {
