@@ -7,7 +7,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO title="Homepage" description="The M. Hatter Store Homepage" />
+      <SEO title="Ohio-Themed Tees and Merch" description="Cowtown Tees" />
       
       <HomepageCollectionsGrid collections={collections.filter(collection => collection.title !== 'Featured Items' )}></HomepageCollectionsGrid>
 

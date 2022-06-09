@@ -4,9 +4,9 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: `M. Hatter Store`,
-    description: `We're mad about hats`,
-    author: `@tomphill`,
+    title: `Cowtown Tees`,
+    description: `Ohio-themed tees and merch`,
+    author: `@sdfawcett`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
